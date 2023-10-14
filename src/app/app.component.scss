@@ -1,0 +1,30 @@
+.episodes {
+  background-color: #FF7A00;
+  padding: 20px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15%;
+
+  .link {
+    padding: 5px 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #FF7A00;
+    border-radius: 4px;
+  }
+}
+
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+nav a.active {
+  color: #039be5;
+}

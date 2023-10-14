@@ -1,0 +1,13 @@
+<div class="terminal">
+    <div class="messagesTop">
+        <span class="messagesTitle">Messages</span>
+        <button class="clear"
+            (click) = "messageService.clear()"
+        >
+            <img class="messagesClear" src="https://cdn-icons-png.flaticon.com/512/4225/4225690.png">
+        </button>
+    </div>
+    <div *ngIf="messageService.messages.length" class="messages">
+        <div *ngFor="let message of messageService.messages">{{message}}</div>
+    </div>
+</div>

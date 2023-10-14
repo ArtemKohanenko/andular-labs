@@ -1,0 +1,13 @@
+<h1 class="title">Episodes</h1>
+<div class="dashboard">
+  <a *ngFor="let episode of episodes"
+    class="tile"
+    routerLink="/detail/{{episode.id}}"
+    >
+    <div class="content">
+      <h3 class="episodeName">{{episode.name}}</h3>
+      <img class="episodeImg" src="{{episode.thumbnail_url}}">
+      <p class="episodeDescription">{{episode.description}}</p>
+    </div>
+  </a>
+</div>

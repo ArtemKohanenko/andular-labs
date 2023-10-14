@@ -1,0 +1,25 @@
+<h1>Список</h1>
+<div>
+  <label>Episode name:
+    <input #episodeName />
+  </label>
+  <label>Episode picture link:
+    <input #episodePictureLink type="text"/>
+  </label>
+  <label>Description:
+    <textarea #episodeDescription></textarea>
+  </label>
+  <button (click)="add(episodeName.value, episodePictureLink.value, episodeDescription.value); episodeName.value=''; episodePictureLink.value=''; episodeDescription.value=''">
+    Add
+  </button>
+</div>
+  
+<ul class="heroes">
+  <li
+    *ngFor="let episode of episodes"
+  >
+    <a routerLink="/detail/{{episode.id}}">
+      <span class="badge">{{episode.id}}</span> {{episode.name}}
+    </a>
+  </li>
+</ul>

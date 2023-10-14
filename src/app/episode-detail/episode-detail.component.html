@@ -1,0 +1,16 @@
+<button class="backButton" (click)="goBack()">
+    <img class="backButtonIcon" src="https://cdn-icons-png.flaticon.com/512/0/340.png">
+</button>
+<div *ngIf="episode">
+    <div class="content">
+        <img class="episodeImg" src="{{episode.thumbnail_url}}">
+        <h1 class="episodeName">{{episode.name | uppercase}} details</h1>
+        <h3 class="id">id: {{episode.id}}</h3>
+        <label class="label">Name:
+            <input class="imputName" [(ngModel)]="episode.name" placeholder="name">
+        </label>
+        <button (click)="save()">Save</button>
+        <p class="episodeNum">SE: {{episode.season}}, EP: {{episode.episode}}</p>
+        <p class="episodeDescription">{{episode.description}}</p>
+    </div>
+</div>

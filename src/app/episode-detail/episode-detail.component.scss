@@ -1,0 +1,34 @@
+.backButton {
+  background-color: transparent;
+  .backButtonIcon {
+    height: 50px;
+  }
+}
+.content {
+  text-align: center;
+  .episodeName {
+    color: black;
+  }
+  
+  .episodeImg {
+    width: 30%;
+  }
+
+  .label {
+    font-weight: bold;
+
+    .inputName {
+      font-weight: bold;
+    }
+  }
+
+  .episodeNum {
+    font-weight: bold;
+    color: black;
+  }
+
+  .episodeDescription {
+    font-weight: bold;
+    color: black;
+  }
+}
